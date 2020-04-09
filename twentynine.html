@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script>
+            const validate= () => {
+                var name = document.getElementById('fname').value;
+                document.getElementById('output').style.color="red";
+
+                if(name == ' '|| name == '' ){
+                    document.getElementById('output').innerText="Please enter first name"
+                }else{
+                    document.getElementById('output').innerText=""
+                }
+            }
+
+            const validatel= () => {
+                console.log('validatel111>>>>')
+                var name = document.getElementById('lname').value;
+                document.getElementById('output').style.color="red";
+                console.log('validatel222>>>>',name)
+                if(name.length < 8){
+                    document.getElementById('output').innerText="Min length is eight"
+                }else{
+                    document.getElementById('output').innerText=""
+                }
+            }
+
+            const validatemail= () => {
+                console.log('validatel111>>>>')
+                var email = document.getElementById('email').value;
+                document.getElementById('output').style.color="red";
+                console.log('validatel222>>>>',name)
+                if(email == ' '|| email == '' ){
+                    document.getElementById('output').innerText="Please enter email"
+                }else{
+                    if(email.match('^([a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]{2,5})$') == null ){
+                        document.getElementById('output').innerText="Please enter valid email"
+                    }else{
+                        document.getElementById('output').innerText="" 
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="abc.php" method="post">
+            <div>
+                <label>FirstName</label>
+                <input type="text" id="fname" onblur="validate()"/>
+            </div>
+            <div>
+                <label>LastName</label>
+                <input type="text" id="lname" oninput="validatel()"/>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" id="email" onblur="validatemail()"/>
+            </div>
+        </form>
+        <p id="output"></p>
+    </body>
+</html>

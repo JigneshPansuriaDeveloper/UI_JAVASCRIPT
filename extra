@@ -1,0 +1,89 @@
+https://code.visualstudio.com/
+
+Ecma 5
+Ecma 6
+> variable
+> Operations
+> condition
+> if else
+> ternery Operations
+> switch
+> loops
+> functions
+> array
+> Es6
+    > lat, const
+    > maps,filter
+    > classes
+    > import export
+> regex
+> localstorage
+> Clousers
+> Hoisting
+> object 
+> Prototypes
+> Transpile
+> DoM
+> Geolocation
+> Events
+> Calc
+> Form validation
+> Progress bar
+----------------
+> promis
+> async await
+> Baisc Jquery
+> Weather application
+> ajax
+> JSON
+> Github
+
+20-25
+
+/////
+https://github.com/Aakashdeveloper
+//////
+
+//Download GitBash >https://git-scm.com/downloads
+///Github////
+>>>>Navigate to folder using cmd
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testapp.git
+git push -u origin master
+
+//Second and all next time//
+git add .
+git commit -m "adding if conditon"
+git push
+
+
+
+//////
+Clouser
+local/globalscope
+object
+////
+
+
+IIS
+java - apache
+php - xamp
+
+python/Node
+
+IFFI
+
+var a="abcD34@#"
+a.match("^([a-zA-Z0-9]+[!@#\$%\^&\*]{8})$")
+
+babel
+
+/*
+npm init -y
+npm install @babel/core @babel/preset-env @babel/register
+
+class
+id
+tag

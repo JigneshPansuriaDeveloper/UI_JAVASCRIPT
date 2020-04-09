@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>calc</title>
+    </head>
+    <body>
+        <input id="one" type="text"/>
+        <input id="two" type="text"/>
+        <p> </p>
+        <button onclick="calc('add')">Add</button>
+        <button onclick="calc('sub')">Sub</button>
+        <script>
+            function calc(opt){
+                var a = document.getElementById('one').value;
+                var b = document.getElementById('two').value;
+                var out;
+                if(opt=="add"){
+                    out= parseInt(a)+parseInt(b)
+                }else{
+                    out= parseInt(a)-parseInt(b)
+                }
+
+                document.getElementsByTagName('p')[0].innerHTML=out
+            }
+        </script>
+    </body>
+</html>
