@@ -57,4 +57,17 @@ const doChores = async () => {
   doChores();
   console.log("after async");
   
+
+// FETCH API
+
+  const apiCall = async () => {
+    try {
+      const response = await fetch("https://api.github.com/users/techsithgit");
+      return await response.json();
+    } catch (error) {
+      return error;
+    }
+  };
+
+apiCall().then(response => console.log(response));
   
